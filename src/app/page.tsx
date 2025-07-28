@@ -1,3 +1,4 @@
+import ActiveLink from "@/components/ActiveLink";
 
 export default function Home() {
   return (
@@ -5,15 +6,15 @@ export default function Home() {
       <div className="flex w-screen h-15 border-b-2 border-gray-300 absolute">
         <div className="flex flex-row justify-between items-center align-middle select-none">
           <p className="ml-4 font-bold text-xl italic">Stomach app</p>
-          <button className="p-4 outline-none hover:bg-gray-300 rounded-lg active:border-b-blue-500 active:border-4">
+          <ActiveLink href={"/"}>
             Главная
-          </button>
-          <button className="p-2 hover:bg-gray-300 rounded-lg active:border-b-blue-500 active:border-4">
+          </ActiveLink>
+          <ActiveLink href={'/appointment'} >
             Записи
-          </button>
-          <button className="p-2 hover:bg-gray-300 rounded-lg active:border-b-blue-500 active:border-4">
+          </ActiveLink>
+          <ActiveLink href={'/profile'} >
             Профиль
-          </button>
+          </ActiveLink>
         </div>
       </div>
 
